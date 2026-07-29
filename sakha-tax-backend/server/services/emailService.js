@@ -19,8 +19,12 @@ const getTransporter = () => {
       user: env.email.user,
       pass: env.email.pass,
     },
+    // Some hosts (e.g. Render's free tier) have unreliable/no IPv6 outbound
+    // connectivity, which causes ENETUNREACH when Node resolves an IPv6
+    // address for smtp.gmail.com first. Forcing IPv4 avoids that.
+    family: 4,
   })
-
+  
   return transporter
 }
 
