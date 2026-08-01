@@ -10,6 +10,10 @@ import { apiLimiter } from './middleware/rateLimiter.js'
 import { notFound, errorHandler } from './middleware/errorHandler.js'
 
 const app = express()
+// Render (and most cloud hosts) sit behind a reverse proxy that sets
+// X-Forwarded-For. Trusting the first proxy hop lets express-rate-limit
+// (and req.ip) correctly identify the real client IP instead of the
+// proxy's IP, and avoids the ERR_ERL_UNEXPECTED_X_FORWARDED_FOR warning.
 app.set('trust proxy', 1)
 
 // Security headers
