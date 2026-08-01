@@ -8,10 +8,10 @@ export const NAV_LINKS = [
 export const BUSINESS = {
   name: 'Sakha Tax Consultancy',
   tagline: 'Your Trusted Partner in Tax & Financial Compliance',
-  phone: '+91 98765 43210',
-  phoneRaw: '+919876543210',
-  email: 'info@sakhatax.com',
-  address: '3rd Floor, Nakshatra Business Hub, C.G. Road, Navrangpura, Ahmedabad, Gujarat 380009',
+  phone: '+919157757384/9157657384',
+  phoneRaw: '+919157757384/9157657384',
+  email: 'mrugeshtaxation2020@gmail.com',
+  address: '19 Bapusmruti Soc Opp Ashray Restaurant Near Gandhi Ashram Ahmedabad, Gujarat',
   mapEmbedSrc:
     'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.999999999999!2d72.5619!3d23.0338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDAyJzAxLjciTiA3MsKwMzMnNDIuOCJF!5e0!3m2!1sen!2sin!4v1700000000000',
   hours: [
